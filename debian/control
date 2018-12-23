@@ -16,13 +16,29 @@ Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-sebest-xff.git
 XS-Go-Import-Path: github.com/sebest/xff
 Testsuite: autopkgtest-pkg-go
 
+Package: golang-github-sebest-xff
+Architecture: any
+Depends: ${misc:Depends},
+         golang-github-codegangsta-negroni-dev,
+         golang-github-gorilla-mux-dev,
+         golang-github-stretchr-testify-dev
+Description: Golang Middleware to handle X-Forwarded-For Header
+ Package xff is a net/http middleware/handler to parse Forwarded HTTP Extension
+ in Golang.
+ .
+ Parse function parses the value of the X-Forwarded-For Header and returns the
+ IP address.
+ .
+ Options is a configuration container, provided by this package, to setup the
+ XFF middleware.
+
 Package: golang-github-sebest-xff-dev
 Architecture: all
 Depends: ${misc:Depends},
          golang-github-codegangsta-negroni-dev,
          golang-github-gorilla-mux-dev,
          golang-github-stretchr-testify-dev
-Description: A Golang Middleware to handle X-Forwarded-For Header
+Description: Golang Middleware to handle X-Forwarded-For Header
  Package xff is a net/http middleware/handler to parse Forwarded HTTP Extension
  in Golang.
  .
