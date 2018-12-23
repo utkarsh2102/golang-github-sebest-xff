@@ -22,6 +22,7 @@ Depends: ${misc:Depends},
          golang-github-codegangsta-negroni-dev,
          golang-github-gorilla-mux-dev,
          golang-github-stretchr-testify-dev
+Built-Using: ${misc:Built-Using}
 Description: Golang Middleware to handle X-Forwarded-For Header
  Package xff is a net/http middleware/handler to parse Forwarded HTTP Extension
  in Golang.
@@ -38,7 +39,7 @@ Depends: ${misc:Depends},
          golang-github-codegangsta-negroni-dev,
          golang-github-gorilla-mux-dev,
          golang-github-stretchr-testify-dev
-Description: Golang Middleware to handle X-Forwarded-For Header
+Description: Golang Middleware to handle X-Forwarded-For Header (development files)
  Package xff is a net/http middleware/handler to parse Forwarded HTTP Extension
  in Golang.
  .
@@ -47,3 +48,5 @@ Description: Golang Middleware to handle X-Forwarded-For Header
  .
  Options is a configuration container, provided by this package, to setup the
  XFF middleware.
+ .
+ This package contains the source.
